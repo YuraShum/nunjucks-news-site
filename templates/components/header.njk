@@ -1,0 +1,14 @@
+<nav>
+        {% set navLinks = [
+        {name: 'home', link: '/'},
+        {name: 'about', link: '/about'},  
+        {name: 'articles', link: '/articles'}, 
+        {name: 'contact', link: '/contact'}]%}
+        <ul>
+            {% for item in navLinks%}
+                <li>
+                    <a href = '{{ item.link }}'>{{ item.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+</nav>

@@ -1,0 +1,24 @@
+{
+  "name": "news-site",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000n\u0000u\u0000n\u0000j\u0000u\u0000c\u0000k\u0000s\u0000-\u0000n\u0000e\u0000w\u0000s\u0000-\u0000s\u0000i\u0000t\u0000e\u0000\r\u0000 \u0000",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuraShum/nunjucks-news-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuraShum/nunjucks-news-site/issues"
+  },
+  "homepage": "https://github.com/YuraShum/nunjucks-news-site#readme",
+  "dependencies": {
+    "express": "^4.21.1",
+    "nunjucks": "^3.2.4"
+  }
+}

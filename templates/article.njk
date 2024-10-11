@@ -1,0 +1,39 @@
+{% extends 'components/base.njk' %}
+
+{% block content %}
+    <section class="article">
+        <h1>{{ title }}</h1>
+        <p>Опубліковано: {{ publishedDate }}</p>
+        <p>Автор: {{ author }}</p>
+
+        <article>
+            <p>{{ content }}</p>
+        </article>
+
+        <h2>Коментарі</h2>
+        <div class="comments">
+            {% if comments.length > 0 %}
+                <ul>
+                    {% for comment in comments %}
+                        <li>
+                            <p><strong>{{ comment.author }}:</strong> {{ comment.text }}</p>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>Коментарів поки що немає. Будьте першим!</p>
+            {% endif %}
+        </div>
+
+        <h3>Залишити коментар</h3>
+        <form action="/submit-comment" method="post">
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="comment">Коментар:</label>
+            <textarea id="comment" name="comment" required></textarea>
+
+            <button type="submit">Надіслати</button>
+        </form>
+    </section>
+{% endblock %}
