@@ -47,3 +47,29 @@
 .news-list-item:hover{
     transform: scale(1.2);
 }
+
+
+.popular-articles h2{
+    font-size: 36px;
+
+}
+
+.popular-articles ul {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.popular-articles ul > li {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-color: #333;
+    background-color: #c2c2c2;
+    cursor: pointer;
+    width: max-content;
+    font-size: 18px;
+
+}
